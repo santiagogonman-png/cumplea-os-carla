@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Carla ❤️</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: Georgia, serif;
+  background: #fff0f5;
+  color: #513543;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0; /* Asegura espacio arriba y abajo */
+  overflow-x: hidden; /* Evita desplazamiento horizontal pero permite el vertical */
+}
+.card {
+  position: relative;
+  width: min(90%, 620px);
+  margin: auto;
+  padding: 32px 20px;
+  text-align: center;
+  background: #fff;
+  border-radius: 30px;
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.13);
+  z-index: 2;
+  animation: entrada 1.2s ease;
+}
+.emoji {
+  font-size: 50px;
+  animation: pulso 1.8s infinite;
+}
+h1 {
+  margin: 8px 0;
+  color: #c13d70;
+  font-size: clamp(1.8rem, 7vw, 3.2rem); /* Ajustado para adaptarse mejor a móviles */
+  word-wrap: break-word;
+}
+h2 {
+  font-size: 1.1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 10px auto 20px;
+}
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 14px auto;
+  max-width: 500px;
+}
+.btn {
+  display: inline-block;
+  margin: 20px auto 8px;
+  padding: 16px 28px;
+  background: #c13d70;
+  color: white !important;
+  border-radius: 50px;
+  text-decoration: none !important;
+  font: 700 16px Arial, sans-serif;
+  box-shadow: 0 9px 22px rgba(193, 61, 112, 0.33);
+  max-width: 100%;
+}
+.btn:hover {
+  transform: scale(1.04);
+}
+.small {
+  font-size: .85rem;
+  color: #8b6876;
+}
+.heart {
+  position: fixed;
+  bottom: -50px;
+  font-size: 25px;
+  z-index: 1;
+  animation: subir 7s linear infinite;
+  opacity: .65;
+  pointer-events: none; /* Evita que los corazones bloqueen los clics o toques */
+}
+@keyframes subir {
+  0% { transform: translateY(0) rotate(0); opacity: 0; }
+  15% { opacity: .7; }
+  100% { transform: translateY(-115vh) rotate(360deg); opacity: 0; }
+}
+@keyframes entrada {
+  from { opacity: 0; transform: translateY(35px) scale(.96); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes pulso {
+  50% { transform: scale(1.12); }
+}
+</style>
+</head>
+<body>
+<div class="heart" style="left:8%;animation-delay:0s">❤️</div>
+<div class="heart" style="left:22%;animation-delay:2s">💕</div>
+<div class="heart" style="left:40%;animation-delay:4s">❤️</div>
+<div class="heart" style="left:63%;animation-delay:1s">💗</div>
+<div class="heart" style="left:82%;animation-delay:3s">❤️</div>
+
+<section class="card">
+<div class="emoji">🎂❤️</div>
+<h1>Feliz cumpleaños, Carla</h1>
+<h2>Hoy es un día especial porque celebramos a una persona muy especial.</h2>
+<p>Espero que este nuevo año de tu vida esté lleno de momentos inolvidables, sonrisas, sueños cumplidos y muchísimo cariño.</p>
+<p><strong>Y ahora… tengo una pequeña sorpresa para ti. 🥰</strong></p>
+<a class="btn" href="https://drive.google.com/file/d/1KjQ4Ym93e1mjRbyz7CDYmoE8WIA-dI--/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">🎬 VER TU SORPRESA</a>
+<p class="small">Pulsa el botón para ver el vídeo ❤️</p>
+</section>
+</body>
+</html>
